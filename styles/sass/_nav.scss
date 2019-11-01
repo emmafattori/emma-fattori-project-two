@@ -1,0 +1,37 @@
+.sr-only:not(:focus):not(:active) {    position: absolute !important;   height: 1px;    width: 1px;   overflow: hidden;   clip: rect(1px 1px 1px 1px); clip: rect(1px, 1px, 1px, 1px);   white-space: nowrap; }
+
+$primary-color: #2B331B;
+$secondary-color: #171B0E;
+$footer-color: #0F0F0F;
+$primary-highlight: #FFD300;
+$secondary-highlight: #FFFFFF;
+
+$primary-font: 'Josefin Sans', sans-serif;
+
+nav{
+
+	ul{
+		display: flex;
+		list-style-type: none;
+		padding-top:5%;
+
+	}
+		li{
+			margin: 1.5%;
+			padding-top:1%;
+			
+		}
+			
+				a{
+				text-decoration: none;
+				color: $secondary-highlight;
+				font-family: $primary-font;
+				}
+			
+	}
+
+	li:hover{
+		border-bottom: 2px solid $primary-highlight;
+		}
+	
+

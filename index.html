@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/6991129e19.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="styles/style.css">
+	<link rel="stylesheet" href="styles/main.css">
 	<title>Emma-Fattori-Project-Two 🍽️</title>
 </head>
 <body>
@@ -14,7 +14,7 @@
 	<header>
 		<div class="wrapper">
 			<div class="header-container">
-				<a href="#" class="skip-link">Skip Link</a>
+				<a href="#" class="sr-only">Skip Link</a>
 				<nav>
 					<ul>
 						<li><a href="#Home">Home</a></li>
@@ -23,7 +23,10 @@
 						<li><a href="#Contact">Contact</a></li>
 					</ul>
 				</nav>
-				<h1>The Restaurant Mall</h1>
+				<h1>The <span>Restaurant</span> Mall</h1>
+			</div>
+			<div class="header-feature">
+				<img src="../the-restaurant-mall-assets/home-box-header.png" alt="Image of food on a plate and people dining">
 			</div>
 
 		</div>
@@ -31,26 +34,36 @@
 	<!-- End of header section -->
 	<section class="about">
 		<div class="wrapper">
-			<aside class="about-item">
-				<i></i>
-				<h2>Location</h2>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates iste dolorem repellat, consectetur quaerat quia repellendus eius repudiandae nemo, ipsam deleniti saepe odio cum enim.</p>
-			</aside>
-			<aside class="about-item">
-				<i></i>
-				<h2>Community</h2>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates iste dolorem repellat, consectetur quaerat quia repellendus eius repudiandae nemo, ipsam deleniti saepe odio cum enim.</p>
-			</aside>
-			<aside class="about-item">
-				<i></i>
-				<h2>Blog</h2>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates iste dolorem repellat, consectetur quaerat quia repellendus eius repudiandae nemo, ipsam deleniti saepe odio cum enim.</p>
-			</aside>
-			<aside class="about-item">
-				<i></i>
-				<h2>Get in Touch</h2>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates iste dolorem repellat, consectetur quaerat quia repellendus eius repudiandae nemo, ipsam deleniti saepe odio cum enim.</p>
-			</aside>
+			<div class="about-item-container">
+				<aside class="about-item">
+					<i class="fas fa-map-marker-alt"></i>
+					<div class="about-item-text">
+						<h2>Location</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates iste dolorem repellat, consectetur quaerat quia repellendus eius repudiandae nemo, ipsam deleniti saepe odio cum enim.</p>
+					</div>
+				</aside>
+				<aside class="about-item">
+					<i class="fas fa-users"></i>
+					<div class="about-item-text">
+						<h2>Community</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates iste dolorem repellat, consectetur quaerat quia repellendus eius repudiandae nemo, ipsam deleniti saepe odio cum enim.</p>
+					</div>
+				</aside>
+				<aside class="about-item">
+					<i class="fas fa-file"></i>
+					<div class="about-item-text">
+						<h2>Blog</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates iste dolorem repellat, consectetur quaerat quia repellendus eius repudiandae nemo, ipsam deleniti saepe odio cum enim.</p>
+					</div>
+				</aside>
+				<aside class="about-item">
+					<i class="fas fa-phone"></i>
+					<div class="about-item-text">
+						<h2>Get in Touch</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates iste dolorem repellat, consectetur quaerat quia repellendus eius repudiandae nemo, ipsam deleniti saepe odio cum enim.</p>
+					</div>
+				</aside>
+			</div>
 		</div>
 	</section>
 	<!-- End of About section -->
@@ -69,9 +82,9 @@
 				<h3>Try Something New</h3>
 				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit in, pariatur ipsum adipisci perferendis, vero voluptatibus odio, necessitatibus vitae mollitia eos maxime ut rerum laboriosam non quaerat! Dolorum, nihil ea?</p>
 			</div>
-			<feature-image2>
+			<div class="image2">
 				<img src="" alt="">
-			</feature-image2>
+			</div>
 		</div>
 	</section>
 	<!-- End of Feature Section -->
