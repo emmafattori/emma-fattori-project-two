@@ -6,68 +6,81 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/6991129e19.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="styles/style.css">
+	<link rel="stylesheet" href="styles/main.css">
 	<title>Contact 🍽️</title>
 </head>
 <body>
 	<!-- Start of Header Content -->
-	<header>
+	<header class="contact-header">
 		<div class="wrapper">
-			<a href="#" class="skip-link">Skip Link</a>
-				<nav>
-					<ul>
-						<li><a href="#Home">Home</a></li>
-						<li><a href="#About">About</a></li>
-						<li><a href="#Blog">Blog</a></li>
-						<li><a href="#Contact">Contact</a></li>
-					</ul>
-				</nav>
-				<h1>Get In Touch</h1>
+			<div class="contact-header-container">
+				<a href="#" class="sr-only">Skip Link</a>
+					<nav>
+						<ul>
+							<li><a href="#Home">Home</a></li>
+							<li><a href="#About">About</a></li>
+							<li><a href="#blog.html">Blog</a></li>
+							<li><a href="#contact.html">Contact</a></li>
+						</ul>
+					</nav>
+					<h1>Get In Touch</h1>
+				</div>
 		</div>
 	</header>
 	<!-- End of Header content -->
 
 	<!-- Beginning of Form content -->
+
+<section class="comment-form">
 	<div class="wrapper">
-		<form action="submit">
+		<div class="form-container">
+			<form action="submit" class="contact-form">
 
-			<label for="name"></label>
-			<input type="text" name="name" id="submit" placeholder="Name">
+				<label for="name" class="sr-only">Name</label>
+				<input type="text" name="name" id="name" placeholder="Name">
 
-			<label for="email"></label>
-			<input type="email" name="email" id="email" placeholder="Email Address">
+				<label for="email" class="sr-only">Email</label>
+				<input type="email" name="email" id="email" placeholder="Email Address">
 
-			<label for="message"></label>
-			<input type="text" name="message" id="message" placeholder="Message">
+				<label for="message" class="sr-only">Message</label>
+				<input type="text" name="message" id="message" placeholder="Message">
 
-			<button type="submit">Submit</button>
+				<label for="submit" class="sr-only">Submit</label>
+				<button type="submit" name="submit" id="submit">Submit</button>
+				
 
-			</form>
+				</form>
+			</div>
 		</div>
+	</section>
 	<!-- End of form information -->
 
 	<!-- Start of contact footer -->
-	<footer>
+	<footer class="contact-footer">
 		<div class="wrapper">
-			<ul class="social">
-					<li>
-						<i class="fab fa-facebook-f"></i>
-					</li>
-					<li>
-						<i class="fab fa-instagram"></i>
-					</li>
-					<li>
-						<i class="fab fa-twitter"></i>
+			<div class="footer-content">
+				<div class="social">
+					<ul>
+						<li>
+							<i class="fab fa-facebook-f"></i>
 						</li>
-					<li>
-						<i class="fab fa-whatsapp"></i>
-					</li>
-			</ul>
-			<p>info@email.com</p>
-			<p>123-456-7890</p>
-			<p>123 Queen Street West, Unit 10</p>
-			<p>Toronto, Ontario</p>
-			<p>M5V2D5</p>
+						<li>
+							<i class="fab fa-instagram"></i>
+						</li>
+						<li>
+							<i class="fab fa-twitter"></i>
+							</li>
+						<li>
+							<i class="fab fa-whatsapp"></i>
+						</li>
+					</ul>
+				</div>
+				<p>info@email.com</p>
+				<p>123-456-7890</p>
+				<p>123 Queen Street West, Unit 10</p>
+				<p>Toronto, Ontario</p>
+				<p>M5V2D5</p>
+			</div>
 		</div>
 	</footer>
 	<!-- Start of copyright -->
