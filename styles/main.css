@@ -222,8 +222,8 @@ body, header, section, aside, article, footer, p, a, input, h1, h2, h3, h4, h5, 
   position: relative;
 }
 
-* {
-  border: 1px solid peachpuff;
+h1, h2 {
+  text-transform: uppercase;
 }
 
 body {
@@ -240,8 +240,8 @@ header {
 header .header-feature {
   position: absolute;
   right: 0;
-  top: 215px;
-  width: 60%;
+  top: 200px;
+  width: 50%;
 }
 
 header .header-feature img {
@@ -255,6 +255,7 @@ h1 {
   font-size: 3.45rem;
   width: 30%;
   text-transform: uppercase;
+  margin: 3% 0 2% 0;
 }
 
 h1 span {
@@ -276,7 +277,7 @@ h1 span {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 20% 7%;
+  padding: 10% 0;
 }
 
 .about-item-container .about-item {
@@ -304,4 +305,172 @@ h1 span {
   padding: 2%;
   border-radius: 50%;
   margin: 2%;
+}
+
+.feature {
+  background: #171B0E;
+}
+
+.feature .wrapper {
+  position: relative;
+}
+
+.feature-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.feature-container .feature-image {
+  width: 45%;
+}
+
+.feature-container .feature-text {
+  width: 55%;
+}
+
+.feature-container img {
+  width: 100%;
+}
+
+.feature-container h3 {
+  text-transform: uppercase;
+}
+
+.feature-container a {
+  background: #FFD300;
+  color: #171B0E;
+  padding: 1%;
+}
+
+.feature-container p {
+  margin-bottom: 2%;
+}
+
+.feature-container h3, .feature-container p, .feature-container a {
+  color: #FFFFFF;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.burger {
+  text-align: left;
+  padding: 7% 5% 2% 10%;
+}
+
+.new {
+  text-align: right;
+  padding: 7% 10% 2% 10%;
+}
+
+.feature-image {
+  position: relative;
+  bottom: 30px;
+  left: 0;
+}
+
+.feature-image img {
+  -webkit-box-shadow: 10px 10px #FFD300;
+          box-shadow: 10px 10px #FFD300;
+}
+
+.feature-image :last-of-type {
+  position: relative;
+  right: 0;
+  top: 30px;
+}
+
+.promo {
+  background: #2B331B;
+  font-family: "Josefin Sans", sans-serif;
+  padding: 10%;
+  text-align: center;
+}
+
+.promo h2 {
+  color: #FFD300;
+  padding: 3%;
+}
+
+.promo p {
+  color: white;
+  margin-bottom: 4%;
+}
+
+.promo a, .promo a:hover, .promo a:visited {
+  text-decoration: none;
+  color: #FFFFFF;
+  background: #0F0F0F;
+  padding: 15px;
+  text-transform: uppercase;
+}
+
+.banner-container img {
+  width: 100%;
+  display: block;
+}
+
+.spaces {
+  background: #2B331B;
+  font-family: "Josefin Sans", sans-serif;
+  padding: 5%;
+}
+
+.spaces-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.spaces-text {
+  padding: 2% 2% 2% 5%;
+}
+
+.spaces-text h2 {
+  color: #FFD300;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding-bottom: 2%;
+}
+
+.spaces-text p {
+  color: #FFFFFF;
+  padding-bottom: 2%;
+}
+
+.spaces-text a {
+  text-decoration: none;
+  color: #FFFFFF;
+  background: #0F0F0F;
+  padding: 9px;
+  text-transform: uppercase;
+}
+
+.gallery {
+  background: #171B0E;
+}
+
+.gallery-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gallery-container .img-container {
+  width: calc(100% / 3);
+  margin: 10% 2% 10% 2%;
+}
+
+.gallery-container img {
+  width: 100%;
+  display: block;
+}
+
+footer {
+  background: #0F0F0F;
+  color: #FFFFFF;
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  padding: 1%;
 }
