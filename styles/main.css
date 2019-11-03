@@ -325,6 +325,211 @@ p :first-of-type {
   padding: 1%;
 }
 
+.blog-header {
+  background-image: url(../the-restaurant-mall-assets/blog-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 25% 50%;
+  height: 80vh;
+}
+
+.blog-header .blog-header-container {
+  margin-left: 7%;
+}
+
+main {
+  background: #2B331B;
+}
+
+main .main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+aside {
+  width: 30%;
+}
+
+aside .aside-image {
+  background: #171B0E;
+}
+
+aside .aside-image img {
+  width: 100%;
+  display: block;
+}
+
+.aside-text {
+  background: #171B0E;
+  margin-left: 10%;
+  font-family: "Josefin Sans", sans-serif;
+  padding: 20px;
+}
+
+.aside-text h4 {
+  color: #FFD300;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 5% 0;
+}
+
+.aside-text p {
+  color: #FFFFFF;
+}
+
+.aside-text li {
+  color: #FFFFFF;
+  margin-left: 10%;
+}
+
+article {
+  width: 65%;
+  margin: 0 0 0 5%;
+}
+
+article .employment-container {
+  border: 4px solid #FFD300;
+}
+
+article .article-image {
+  position: relative;
+  bottom: 150px;
+  -webkit-box-shadow: -15px 15px #FFD300;
+          box-shadow: -15px 15px #FFD300;
+}
+
+article .article-image img {
+  width: 100%;
+}
+
+.article-text {
+  position: relative;
+  bottom: 80px;
+  font-family: "Josefin Sans", sans-serif;
+  margin: 0 6%;
+}
+
+.article-text h2 {
+  color: #FFD300;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.article-text h5 {
+  color: #FFFFFF;
+  margin: 2% 0;
+}
+
+.article-text p {
+  color: #FFFFFF;
+  margin: 2% 0;
+  font-weight: 400;
+}
+
+.comments {
+  margin: 5% 8%;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.comments h2 {
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-weight: 400;
+}
+
+.comment-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 3% 0;
+}
+
+.comment-1 .comment-image-container {
+  width: 20%;
+  padding: 2%;
+}
+
+.comment-1 .comment-image-container img {
+  width: 100%;
+}
+
+.comment-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.comment-2 .comment-image-container {
+  width: 20%;
+  padding: 2%;
+}
+
+.comment-2 .comment-image-container img {
+  width: 100%;
+}
+
+.comment-text {
+  width: 80%;
+  padding: 2%;
+}
+
+.comment-text h5 {
+  color: #FFD300;
+  font-weight: 400;
+}
+
+.comment-text p {
+  color: #FFFFFF;
+  padding: 2% 0;
+}
+
+.blog-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.blog-form .name {
+  width: 46%;
+  margin: 2%;
+  background: #2B331B;
+  border: none;
+  border-bottom: 3px solid #FFD300;
+  color: #FFFFFF;
+}
+
+.blog-form .email {
+  width: 46%;
+  margin: 2%;
+  background: #2B331B;
+  border: none;
+  border-bottom: 3px solid #FFD300;
+  color: #FFFFFF;
+}
+
+.blog-form .message {
+  width: 100%;
+  background: #2B331B;
+  border: 3px solid #FFD300;
+  margin: 3%;
+  color: #FFFFFF;
+  height: 250px;
+}
+
+.blog-form .submit {
+  width: 100%;
+  background: #FFD300;
+  margin: 3%;
+  font-family: "Josefin Sans", sans-serif;
+  color: #171B0E;
+  text-transform: uppercase;
+  padding: 5px;
+}
+
 body {
   font-size: 125%;
 }

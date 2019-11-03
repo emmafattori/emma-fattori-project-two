@@ -6,21 +6,23 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/6991129e19.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="styles/style.css">
+	<link rel="stylesheet" href="styles/main.css">
 	<title>Blog 🍽️</title>
 </head>
 <body>
-	<header>
+	<header class="blog-header">
 		<div class="wrapper">
-			<a href="#" class="skip-link">Skip Link</a>
-			<nav>
-				<ul>
-					<li><a href="#Home">Home</a></li>
-					<li><a href="#About">About</a></li>
-					<li><a href="#Blog">Blog</a></li>
-					<li><a href="#Contact">Contact</a></li>
-				</ul>
-			</nav>
+			<div class="blog-header-container">
+			<a href="#" class="sr-only">Skip Link</a>
+				<nav>
+					<ul>
+						<li><a href="#Home">Home</a></li>
+						<li><a href="#About">About</a></li>
+						<li><a href="#Blog">Blog</a></li>
+						<li><a href="#Contact">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
 		</div>
 	</header>
 	<!-- End of Header section -->
@@ -28,65 +30,98 @@
 	<!-- Start of main content -->
 	<main>
 		<div class="wrapper">
+			<div class="main-container">
 
 			<aside>
-				<h4>Featured Restaurants</h4>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam pariatur labore suscipit recusandae blanditiis ipsum.</p>
+				<div class="aside-image">
+					<img src="the-restaurant-mall-assets/blog-side-image.jpg" alt="Photo of a salmon dish on a plate">
+				</div>
+				<div class="aside-text">
+					<h4>Featured Restaurants</h4>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam pariatur labore suscipit recusandae blanditiis ipsum.</p>
 
-				<h4>Recent Posts</h4>
-				<ul>
-					<li>Lorem ipsum dolor sit.</li>
-					<li>Lorem ipsum dolor sit.</li>
-					<li>Lorem ipsum dolor sit.</li>
-					<li>Lorem ipsum dolor sit.</li>
-				</ul>
+					<h4>Recent Posts</h4>
+					<ul>
+						<li>Lorem ipsum dolor sit.</li>
+						<li>Lorem ipsum dolor sit.</li>
+						<li>Lorem ipsum dolor sit.</li>
+						<li>Lorem ipsum dolor sit.</li>
+					</ul>
+				</div>
 			</aside>
 
 			<article>
-				<h2>Employment Opportunities</h2>
-				<h5>Monday October 30, 2019 by Sulaire</h5>
+				<div class="employment-container">
+					<div class="article-image">
+						<img src="the-restaurant-mall-assets/blog-post-image.jpg" alt="Photo of a server setting tables at a restaurant">
+					</div>
 
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam maiores perspiciatis, repudiandae fugiat accusantium libero eveniet assumenda quia quam suscipit.</p>
+					<div class="article-text">
+						<h2>Employment Opportunities</h2>
+						<h5>Monday October 30, 2019 by Sulaire</h5>
 
-				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore fugiat, ipsa deserunt laudantium saepe fuga voluptates similique, sed blanditiis a delectus molestiae. Culpa ipsam nam est sapiente beatae incidunt corporis?</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam maiores perspiciatis, repudiandae fugiat accusantium libero eveniet assumenda quia quam suscipit.</p>
 
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quas aspernatur dicta cum commodi, sed repellendus quos sapiente voluptatibus! Ratione ab omnis quisquam rerum ullam nobis tempora facilis iusto ea optio natus at dolore nostrum aspernatur maiores autem, ut reiciendis quas eos assumenda modi? Vel facere fugit dicta quam aperiam?</p>
+						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore fugiat, ipsa deserunt laudantium saepe fuga voluptates similique, sed blanditiis a delectus molestiae. Culpa ipsam nam est sapiente beatae incidunt corporis?</p>
 
-				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis esse iure id tenetur molestias rem dicta aperiam earum deleniti eveniet!</p>
-			</article>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quas aspernatur dicta cum commodi, sed repellendus quos sapiente voluptatibus! Ratione ab omnis quisquam rerum ullam nobis tempora facilis iusto ea optio natus at dolore nostrum aspernatur maiores autem, ut reiciendis quas eos assumenda modi? Vel facere fugit dicta quam aperiam?</p>
+
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis esse iure id tenetur molestias rem dicta aperiam earum deleniti eveniet!</p>
+					</div>
+				</div>
+			
 			<section class="comments">
-				<h2>Comments:</h2>
-
-				<div class="comment-1">
-					<img src="" alt="">
-					<h5>Tuesday, October 9th, 2019 by Ali</h5>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa adipisci vel autem architecto, perspiciatis delectus fugiat commodi impedit quae quas.</p>
-				</div>
-				<div class="comment-2">
-					<img src="" alt="">
-					<h5>Wednesday, October 10th, 2019 by Emma</h5>
-					<p>To be quite honest, this is the best restaurant I have ever been to. Eating there is the most exciting thing I've ever done. Their food reverses aging and actually increases intelligence. Also, it's pronounced 'gif'.</p>
-				</div>
-			</section>
-
-			<!-- Start of comment form section -->
-			<form action="submit">
+				<span><h2>Comments:</h2></span>
 				
-				<label for="name"></label>
-				<input type="text" name="name" id="name" placeholder="Name">
 
-				<label for="email"></label>
-				<input type="email" name="email" id="email" placeholder="Email Address">
+					<div class="comment-1">
+						<div class="comment-image-container">
+							<img src="/the-restaurant-mall-assets/comment-1.jpg" alt="Headshot photo of a woman">
+						</div>
+						<div class="comment-text">
+							<h5>Tuesday, October 9th, 2019 by Ali</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa adipisci vel autem architecto, perspiciatis delectus fugiat commodi impedit quae quas.</p>
+						</div>
+					</div>
+					<div class="comment-2">
+						<div class="comment-image-container">
+							<img src="/the-restaurant-mall-assets/comment-2.jpg" alt="Headshot photo of a woman">
+						</div>
+						<div class="comment-text">
+							<h5>Wednesday, October 10th, 2019 by Emma</h5>
+							<p>To be quite honest, this is the best restaurant I have ever been to. Eating there is the most exciting thing I've ever done. Their food reverses aging and actually increases intelligence. Also, it's pronounced 'gif'.</p>
+						</div>
+					</div>
+			</section>
+						<!-- Start of comment form section -->
+			<section class="blog-form">
+			
+				<div class="form-container-2">
 
-				<label for="message"></label>
-				<input type="text" name="message" id="message" placeholder="Comment">
+					<form action="submit" class="blog-form">
+						
+						<label for="name" class="sr-only">Name</label>
+						<input type="text" name="name" id="name" placeholder="Name" class="name">
+
+						<label for="email" class="sr-only">Email</label>
+						<input type="email" name="email" id="email" placeholder="Email Address" class="email">
+
+						<label for="message" class="sr-only"></label>
+						<input type="text" name="message" id="message" placeholder="Comment" class="message">
 
 
-				<label for="submit"></label>
-				<button type="submit" name="submit" id="submit">Post Comment</button>
+						<label for="submit" class="sr-only"></label>
+						<button type="submit" name="submit" id="submit" class="submit">Post Comment</button>
 
-			</form>
-		</div>
+					</form>
+				</div>
+			
+			</section> <!-- End of form section -->
+		  </div>
+			
+		</article>
+
+		</div> <!-- End of wrapper -->
 	</main>
 	<section class="copyright">
 		<p>Copyright &#169; Juno College</p>
