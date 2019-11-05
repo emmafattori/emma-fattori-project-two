@@ -13,6 +13,20 @@
 	<!-- Start of Header Content -->
 	<header class="contact-header">
 		<div class="wrapper">
+			<div class="utensils">
+					<i class="fas fa-utensils"></i>
+			</div>
+			<nav class="mobile-nav">
+					<div class="exit">
+						<i class="fas fa-times"></i>
+					</div>
+					<ul>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+			</nav>
 			<div class="contact-header-container">
 				<a href="#" class="sr-only">Skip Link</a>
 					<nav class="header-nav">
@@ -31,7 +45,7 @@
 
 	<!-- Beginning of Form content -->
 
-<section class="comment-form">
+<section class="contact-comment-form">
 	<div class="wrapper">
 		<div class="form-container">
 			<form action="submit" class="contact-form">
@@ -75,7 +89,7 @@
 						</li>
 					</ul>
 				</div>
-				<p>info@email.com</p>
+				<p class="email-p">info@email.com</p>
 				<p>123-456-7890</p>
 				<p>123 Queen Street West, Unit 10</p>
 				<p>Toronto, Ontario</p>
@@ -87,5 +101,19 @@
 	<section class="copyright">
 		<p>Copyright &#169; Juno College</p>
 	</section>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".utensils").on('click', function(){
+				$(".mobile-nav").toggleClass("open")
+			});
+
+			$(".exit").on('click', function(){
+				$(".mobile-nav").toggleClass("open")
+			})
+
+		});
+	</script>	
 </body>
 </html>

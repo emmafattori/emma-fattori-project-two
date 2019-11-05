@@ -293,11 +293,11 @@ li:hover {
   width: 100%;
 }
 
-.comment-form {
+.contact-comment-form {
   background: #2B331B;
 }
 
-.comment-form .form-container {
+.contact-comment-form .form-container {
   position: absolute;
   right: 35px;
   top: -160px;
@@ -351,6 +351,7 @@ li:hover {
   color: #171B0E;
   text-transform: uppercase;
   padding: 5px;
+  border: none;
 }
 
 .contact-footer {
@@ -370,7 +371,7 @@ li:hover {
 
 .social ul li {
   list-style-type: none;
-  margin: 1%;
+  margin: 1% 1% 1% 0;
   color: #FFD300;
 }
 
@@ -378,8 +379,8 @@ p {
   font-weight: lighter;
 }
 
-p :first-of-type {
-  margin-bottom: 3%;
+.email-p {
+  margin-bottom: 1.5%;
 }
 
 .copyright {
@@ -421,7 +422,7 @@ aside .aside-image {
 }
 
 aside .aside-image img {
-  width: 100%;
+  width: 94%;
   display: block;
 }
 
@@ -593,6 +594,7 @@ article .article-image img {
   color: #171B0E;
   text-transform: uppercase;
   padding: 5px;
+  border: none;
 }
 
 body {
@@ -849,6 +851,12 @@ footer {
   padding: 1%;
 }
 
+@media (max-width: 1125px) {
+  .contact-footer .footer-content {
+    margin: 10% 5% 5% 5%;
+  }
+}
+
 @media (max-width: 970px) {
   .header-container h1 {
     margin: 0;
@@ -864,6 +872,9 @@ h2 {
   }
   .about-item i {
     font-size: 18px;
+  }
+  .comment-form .form-container {
+    top: -120px;
   }
 }
 
@@ -905,6 +916,29 @@ h2 {
   .gallery-container .img-container {
     width: 90%;
     margin: 4% auto;
+  }
+  .contact-comment-form {
+    padding: 4% 0;
+  }
+  .contact-comment-form .form-container {
+    position: static;
+    width: 85%;
+    margin: 0 auto;
+  }
+  .contact-comment-form .form-container .contact-form {
+    margin: 0;
+  }
+  .contact-footer .footer-content {
+    text-align: center;
+  }
+  .contact-footer .footer-content .social {
+    margin: 0 auto;
+    width: 50%;
+  }
+  .contact-footer .footer-content .social ul {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
 }
 
@@ -957,6 +991,9 @@ h2 {
     margin: 5%;
     text-align: center;
   }
+  .contact-header h1 {
+    text-align: center;
+  }
 }
 
 @media (max-width: 682px) {
@@ -969,7 +1006,7 @@ h2 {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 426px) {
   .main-header {
     height: 80vh;
   }
@@ -978,5 +1015,8 @@ h2 {
   }
   .header-feature {
     display: none;
+  }
+  .contact-comment-form .contact-form #name, .contact-comment-form .contact-form #email {
+    width: 98%;
   }
 }

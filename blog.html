@@ -12,9 +12,23 @@
 <body>
 	<header class="blog-header">
 		<div class="wrapper">
+			<div class="utensils">
+					<i class="fas fa-utensils"></i>
+			</div>
+			<nav class="mobile-nav">
+					<div class="exit">
+						<i class="fas fa-times"></i>
+					</div>
+					<ul>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+			</nav>
 			<div class="blog-header-container">
 			<a href="#" class="sr-only">Skip Link</a>
-				<nav>
+				<nav class="header-nav">
 					<ul>
 						<li><a href="index.html">Home</a></li>
 						<li><a href="index.html">About</a></li>
@@ -22,6 +36,7 @@
 						<li><a href="contact.html">Contact</a></li>
 					</ul>
 				</nav>
+				<h1>Blog</h1>
 			</div>
 		</div>
 	</header>
@@ -76,7 +91,7 @@
 
 					<div class="comment-1">
 						<div class="comment-image-container">
-							<img src="/the-restaurant-mall-assets/comment-1.jpg" alt="Headshot photo of a woman">
+							<img src="./the-restaurant-mall-assets/comment-1.jpg" alt="Headshot photo of a woman">
 						</div>
 						<div class="comment-text">
 							<h5>Tuesday, October 9th, 2019 by Ali</h5>
@@ -85,7 +100,7 @@
 					</div>
 					<div class="comment-2">
 						<div class="comment-image-container">
-							<img src="/the-restaurant-mall-assets/comment-2.jpg" alt="Headshot photo of a woman">
+							<img src="./the-restaurant-mall-assets/comment-2.jpg" alt="Headshot photo of a woman">
 						</div>
 						<div class="comment-text">
 							<h5>Wednesday, October 10th, 2019 by Emma</h5>
@@ -123,9 +138,22 @@
 
 		</div> <!-- End of wrapper -->
 	</main>
+
 	<section class="copyright">
 		<p>Copyright &#169; Juno College</p>
 	</section>
-	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".utensils").on('click', function(){
+				$(".mobile-nav").toggleClass("open")
+			});
+
+			$(".exit").on('click', function(){
+				$(".mobile-nav").toggleClass("open")
+			})
+
+		});
+	</script>	
 </body>
 </html>

@@ -23,7 +23,7 @@ $primary-font: 'Josefin Sans', sans-serif;
 	}
 }
 
-.comment-form{
+.contact-comment-form{
 	background: $primary-color;
 
 		.form-container{
@@ -79,6 +79,7 @@ $primary-font: 'Josefin Sans', sans-serif;
 		color: $secondary-color;
 		text-transform: uppercase;
 		padding: 5px;
+		border: none;
 	}
 }
 
@@ -98,7 +99,7 @@ $primary-font: 'Josefin Sans', sans-serif;
 		
 		li{
 			list-style-type: none;
-			margin: 1%;
+			margin: 1% 1% 1% 0;
 			color: $primary-highlight;
 		}
 		
@@ -106,12 +107,14 @@ $primary-font: 'Josefin Sans', sans-serif;
 
 	p{
 		font-weight: lighter;
+
+		
 	}
 
-	p :first-of-type{
-		margin-bottom: 3%;
-
+	.email-p{
+		margin-bottom: 1.5%;
 	}
+
 
 	
 

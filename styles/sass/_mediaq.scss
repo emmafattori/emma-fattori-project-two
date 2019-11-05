@@ -5,7 +5,14 @@ $primary-highlight: #FFD300;
 $secondary-highlight: #FFFFFF;
 
 $primary-font: 'Josefin Sans', sans-serif;
+// Start of MQ
 
+@media (max-width: 1125px){
+	.contact-footer .footer-content{
+		margin: 10% 5% 5% 5%;
+
+	}
+}
 @media (max-width:970px){
 	
 	.header-container{
@@ -14,7 +21,6 @@ $primary-font: 'Josefin Sans', sans-serif;
 		padding-top: 5%;
 		}	
 	}
-
 	.about-item-container
 	h2{
 		font-size: 25px;
@@ -30,6 +36,10 @@ $primary-font: 'Josefin Sans', sans-serif;
 		font-size: 18px;
 		}
 
+	}
+
+	.comment-form .form-container{
+		top: -120px;
 	}
 }
 
@@ -76,6 +86,35 @@ $primary-font: 'Josefin Sans', sans-serif;
 			width: 90%;
 			margin: 4% auto;
 			
+		}
+	}
+
+	.contact-comment-form {
+		padding: 4% 0;
+
+		.form-container{
+		position: static;
+		width: 85%;
+		margin: 0 auto;
+		
+
+			.contact-form{
+			margin:0;
+			}
+
+		}
+	
+	}
+
+	.contact-footer .footer-content{
+		text-align: center;
+		.social{
+			margin:0 auto;
+			width: 50%;
+
+			ul{
+				justify-content: space-evenly;
+			}
 		}
 	}
 	
@@ -134,6 +173,12 @@ $primary-font: 'Josefin Sans', sans-serif;
 		}
 		
 	}
+
+	.contact-header{
+		h1{
+			text-align: center;
+		}
+	}
 		
 }
 // End of 740px MQ
@@ -149,7 +194,7 @@ $primary-font: 'Josefin Sans', sans-serif;
 
 }
 // End of 682px MQ
-@media (max-width: 425px){
+@media (max-width: 426px){
 	.main-header{
 		height: 80vh;
 
@@ -161,4 +206,16 @@ $primary-font: 'Josefin Sans', sans-serif;
 	.header-feature{
 		display:none;
 	}
+
+	.contact-comment-form{
+		.contact-form{
+			#name, #email{
+				width: 98%;
+			}
+		}
+	}
+
+	
 }
+
+
