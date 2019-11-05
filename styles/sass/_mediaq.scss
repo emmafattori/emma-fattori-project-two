@@ -179,7 +179,20 @@ $primary-font: 'Josefin Sans', sans-serif;
 			text-align: center;
 		}
 	}
-		
+
+
+	.blog-main-container{
+		flex-direction: column-reverse;
+
+		article, aside{
+			width: 90%;
+			margin:0 auto;
+		}
+
+	}
+
+
+	
 }
 // End of 740px MQ
 @media (max-width: 682px){

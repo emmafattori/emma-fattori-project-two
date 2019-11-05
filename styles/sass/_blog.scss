@@ -26,7 +26,7 @@ main{
 	background: $primary-color;
 
 	
-	.main-container{
+	.blog-main-container{
 		display:flex;
 	}
 
@@ -76,6 +76,7 @@ article{
 
 	.employment-container{
 		border: 4px solid $primary-highlight;
+		margin-left: 10%;
 	}
 
 
