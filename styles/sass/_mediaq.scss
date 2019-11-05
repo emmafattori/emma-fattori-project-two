@@ -1,0 +1,164 @@
+$primary-color: #2B331B;
+$secondary-color: #171B0E;
+$footer-color: #0F0F0F;
+$primary-highlight: #FFD300;
+$secondary-highlight: #FFFFFF;
+
+$primary-font: 'Josefin Sans', sans-serif;
+
+@media (max-width:970px){
+	
+	.header-container{
+		h1{
+		margin:0;
+		padding-top: 5%;
+		}	
+	}
+
+	.about-item-container
+	h2{
+		font-size: 25px;
+		}
+	
+	p{
+		font-size: 18px;
+		line-height: 28px;
+	}
+
+	.about-item{
+		i {
+		font-size: 18px;
+		}
+
+	}
+}
+
+@media (max-width: 840px){
+	.header-container{
+		h1{
+		font-size: 50px;
+		padding-top: 8%;
+		}
+
+	}
+	 .feature .feature-text {
+		width: 50%;
+	}
+
+	.feature .feature-image{
+		width: 50%;
+	}
+
+	.burger{
+		padding: 3% 2% 3% 5%;
+	}
+
+	.new{
+		padding: 3% 3% 3% 2%;
+	}
+
+	.spaces-info {
+		flex-direction: column;
+
+		.spaces-text, .spaces-photo{
+			margin:0 auto;
+		}
+
+		.spaces-text{
+			text-align: center;
+		}
+	}
+
+	.gallery-container{
+		flex-direction: column;
+
+		.img-container{
+			width: 90%;
+			margin: 4% auto;
+			
+		}
+	}
+	
+}
+// End of 840px MQ
+@media (max-width: 740px){
+	.main-header {
+
+		.wrapper{
+			position: static;
+		}
+		.header-container	{
+		height: 100vh;
+		position: relative;
+		}
+
+		.header-feature{
+			position: absolute;
+			top: 350px;
+		}
+	}
+
+	.about-item-container{
+		flex-direction: column;
+
+		.about-item{
+			width: 80%;
+		}
+	}
+
+	.feature-container1{
+		flex-direction: column;
+
+		.feature-text, .feature-image{
+			width: 90%;
+			margin:0 auto;
+		}
+
+		.feature-text{
+			margin: 5%;
+			text-align: center;
+		}
+	}
+
+	.feature-container2{
+		flex-direction: column-reverse;
+
+		.feature-text, .feature-image{
+			width: 90%;
+			margin: 0 auto;
+		}
+
+		.feature-text{
+			margin: 5%;
+			text-align: center;
+		}
+		
+	}
+		
+}
+// End of 740px MQ
+@media (max-width: 682px){
+	.header-container h1{
+		text-shadow: 2px 3px #171B0E;
+		padding-top: 18%;
+	}
+
+	.utensils i{
+		text-shadow: 3px 4px #171B0E;
+	}
+
+}
+// End of 682px MQ
+@media (max-width: 425px){
+	.main-header{
+		height: 80vh;
+
+		h1{
+			padding-top: 40%;
+		}
+	}
+
+	.header-feature{
+		display:none;
+	}
+}

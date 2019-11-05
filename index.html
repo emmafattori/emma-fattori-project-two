@@ -11,28 +11,43 @@
 </head>
 <body>
 	<!-- Start of Header Content -->
-	<header class="main-header">
+	<header class="main-header" id="home">
 		<div class="wrapper">
+			<div class="utensils">
+					<i class="fas fa-utensils"></i>
+			</div>
+			<nav class="mobile-nav">
+					<div class="exit">
+						<i class="fas fa-times"></i>
+					</div>
+					<ul>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+			</nav>
 			<div class="header-container">
 				<a href="#" class="sr-only">Skip Link</a>
-				<nav>
+				<nav class="header-nav">
 					<ul>
-						<li><a href="#Home">Home</a></li>
-						<li><a href="#About">About</a></li>
-						<li><a href="#Blog">Blog</a></li>
-						<li><a href="#Contact">Contact</a></li>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="contact.html">Contact</a></li>
 					</ul>
 				</nav>
+				
 				<h1>The <span>Restaurant</span> Mall</h1>
 			</div>
-			<div class="header-feature">
+			<div class="header-feature mobileSpecific">
 				<img src="./the-restaurant-mall-assets/home-box-header.png" alt="Image of food on a plate and people dining">
 			</div>
 
 		</div>
 	</header>
 	<!-- End of header section -->
-	<section class="about">
+	<section class="about" id="about">
 		<div class="wrapper">
 			<div class="about-item-container">
 				<aside class="about-item">
@@ -70,25 +85,26 @@
 	<!-- Start of Feature section -->
 	<section class="feature">
 		<div class="wrapper">
-			<div class="feature-container">
-				<div class="feature-image">
-					<img src="../the-restaurant-mall-assets/left-image.jpg" alt="Photo of burgers and fries on a plate">
+			<div class="feature-container1">	
+				
+					<div class="feature-image">
+						<img src="./the-restaurant-mall-assets/left-image.jpg" alt="Photo of burgers and fries on a plate">
+					</div>
+					<div class="feature-text burger">
+						<h3>Best Burgers</h3>
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere, officiis! Nobis architecto, asperiores, impedit consequatur aliquam veritatis nisi, perferendis maiores corporis fugit sapiente veniam sequi porro consectetur tempore. Praesentium, voluptas.</p>
+						<a href="#">Read More</a>
+					</div>
 				</div>
-				<div class="feature-text burger">
-					<h3>Best Burgers</h3>
-					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere, officiis! Nobis architecto, asperiores, impedit consequatur aliquam veritatis nisi, perferendis maiores corporis fugit sapiente veniam sequi porro consectetur tempore. Praesentium, voluptas.</p>
-					<a href="#">Read More</a>
-				</div>
-			
-		
+
+			<div class="feature-container2">
 				<div class="feature-text new">
 					<h3>Try Something New</h3>
 					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit in, pariatur ipsum adipisci perferendis, vero voluptatibus odio, necessitatibus vitae mollitia eos maxime ut rerum laboriosam non quaerat! Dolorum, nihil ea?</p>
 					<span class="read-more"><a href="#">Read More</a></span>
-
 				</div>
 				<div class="feature-image">
-					<img src="../the-restaurant-mall-assets/right-image.jpg" alt="Image of a salad from the top">
+					<img src="./the-restaurant-mall-assets/right-image.jpg" alt="Image of a salad from the top">
 				</div>
 			</div>
 		</div>
@@ -107,7 +123,7 @@
 	<!-- Start of banner -->
 	<section class="banner">
 		<div class="banner-container">
-			<img src="/the-restaurant-mall-assets/banner.jpg" alt="Photo of people sitting at tables in an open restaurant space">
+			<img src="./the-restaurant-mall-assets/banner.jpg" alt="Photo of people sitting at tables in an open restaurant space">
 		</div>
 	</section>
 	<!-- Start of spaces Section -->
@@ -116,7 +132,7 @@
 		<div class="wrapper">
 			<div class="spaces-info">
 				<div class="spaces-photo">
-					<img src="/the-restaurant-mall-assets/square-image.jpg" alt="Photo of people at tables in a restaurant setting with plants">
+					<img src="./the-restaurant-mall-assets/square-image.jpg" alt="Photo of people at tables in a restaurant setting with plants">
 				</div>
 				<div class="spaces-text">
 					<h2>Bringing Nature In Spaces</h2>
@@ -133,13 +149,13 @@
 		<div class="wrapper">
 			<div class="gallery-container">
 				<div class="img-container">
-					<img src="/the-restaurant-mall-assets/gallery-image-1.jpg" alt="Image of lights over a table">
+					<img src="./the-restaurant-mall-assets/gallery-image-1.jpg" alt="Image of lights over a table">
 				</div>
 				<div class="img-container">
-					<img src="/the-restaurant-mall-assets/gallery-image-2.jpg" alt="Photo of a neon take-away sign">
+					<img src="./the-restaurant-mall-assets/gallery-image-2.jpg" alt="Photo of a neon take-away sign">
 				</div>
 				<div class="img-container">
-					<img src="/the-restaurant-mall-assets/gallery-image-3.jpg" alt="Photo of bowls with restaurant dishes from above">
+					<img src="./the-restaurant-mall-assets/gallery-image-3.jpg" alt="Photo of bowls with restaurant dishes from above">
 				</div>
 			</div>
 		</div>
@@ -151,6 +167,18 @@
 		<p>Copyright &#169; Juno College</p>
 	</footer>
 
-	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".utensils").on('click', function(){
+				$(".mobile-nav").toggleClass("open")
+			});
+
+			$(".exit").on('click', function(){
+				$(".mobile-nav").toggleClass("open")
+			})
+
+		});
+	</script>	
 </body>
 </html>

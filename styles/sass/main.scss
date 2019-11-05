@@ -1,8 +1,7 @@
-@import "nav";
 @import "setup";
+@import "nav";
 @import "contact";
 @import "blog";
-
 
 $primary-color: #2B331B;
 $secondary-color: #171B0E;
@@ -12,9 +11,6 @@ $secondary-highlight: #FFFFFF;
 
 $primary-font: 'Josefin Sans', sans-serif;
 
-// *{
-// 	border:1px solid peachpuff;
-// }
 body{
 	font-size: 125%;
 }
@@ -28,7 +24,7 @@ header{
 	position: absolute;
 	right:0;
 	top: 200px;
-	width: 50%;
+	width: 45%;
 		
 		img{
 			width:100%;
@@ -44,6 +40,7 @@ h1{
 	width: 30%;
 	text-transform: uppercase;
 	margin: 3% 0 2% 0;
+	padding-top: 8%;
 
 	span{
 		color: $secondary-color;
@@ -54,12 +51,10 @@ h1{
 .header-container{
 	margin-left: 7%;
 }
-
+// About section styles begin
 .about{
 	background: $primary-color;
 }
-
-// About section styles begin
 
 .about-item-container{
 	display:flex;
@@ -100,7 +95,7 @@ h1{
 	}
 }
 
-.feature-container{
+.feature-container1, .feature-container2{
 	display: flex;
 	flex-wrap: wrap;
 
@@ -121,13 +116,17 @@ h1{
 	a{
 		background: $primary-highlight;
 		color: $secondary-color;
-		padding: 1%;
+		padding: 2%;
+		text-decoration: none;
+		font-family: $primary-font;
+		text-transform: uppercase;
+		margin: 1%;
 	}
 
 	p{
 		margin-bottom: 2%;
 	}
-	h3, p, a{
+	h3, p {
 		color: $secondary-highlight;
 		font-family: $primary-font;
 	}
@@ -141,14 +140,15 @@ h1{
 
 .new{
 	text-align: right;
-	padding: 7% 10% 2% 10%;
+	padding: 4% 10% 2% 10%;
 
 	
 }
 
+
 .feature-image{
 	position: relative;
-	bottom:30px;
+	bottom:15px;
 	left: 0;
 	
 	img{
@@ -198,10 +198,11 @@ h1{
 	background: $primary-color;
 	font-family: $primary-font;
 	padding: 5%;
-}
 
-.spaces-info{
+	.spaces-info{
 	display: flex;
+	}
+
 	
 }
 
@@ -256,3 +257,5 @@ h1{
 		text-align: center;
 		padding:1%;
 	}
+
+	@import "mediaq";

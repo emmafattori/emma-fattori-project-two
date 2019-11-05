@@ -8,7 +8,11 @@ $secondary-highlight: #FFFFFF;
 
 $primary-font: 'Josefin Sans', sans-serif;
 
-nav{
+.mobile-nav, .utensils{
+	display: none;
+}
+
+.header-nav{
 
 	ul{
 		display: flex;
@@ -34,4 +38,82 @@ nav{
 		border-bottom: 2px solid $primary-highlight;
 		}
 	
+@media (max-width: 1125px){
+	nav{
+		width: 50%;	
 
+		li{
+			margin: 0.7%;
+			padding: 5% 0 0 0;
+		}
+		
+	}
+
+}
+
+@media (max-width: 970px){
+	
+	.open{
+		display: block;
+	}
+
+	.closed{
+		display: none;
+	}
+
+	.utensils{
+		margin: 0;
+		display: block;
+			i{
+			color: $secondary-highlight;
+			font-size: 70px;
+			margin:5%;
+		}
+	}
+	
+	.exit{
+		i{
+			color: $secondary-highlight;
+			font-size: 50px;
+			margin:5%;
+			position: absolute;
+			right: 0;
+			}
+		}
+
+
+	.header-container{
+		h1{
+			margin:0;
+			padding-top: 3%;
+		}
+	}
+	.header-nav{
+		display: none;
+	}
+
+		.mobile-nav{
+		background: black;
+		opacity: 0.9;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		z-index: 1;
+			
+			li a{
+				text-decoration: none;
+				color: $primary-highlight;
+				font-family: $primary-font;
+				font-size: 40px;
+				padding:5%;
+			}
+	
+	
+	}
+
+}
+// End of 970px media query
