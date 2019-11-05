@@ -217,7 +217,7 @@ h1, h2 {
   content: "";
   background: #FFD300;
   position: absolute;
-  bottom: 0;
+  bottom: -3px;
   right: 0;
   left: 0;
   height: 10%;
@@ -228,6 +228,7 @@ h1, h2 {
   opacity: 1;
   -webkit-transition: opacity 0.6s ease-in;
   transition: opacity 0.6s ease-in;
+  margin-bottom: 3px;
 }
 
 @media (max-width: 1125px) {
@@ -380,6 +381,26 @@ h1, h2 {
   text-transform: uppercase;
   padding: 5px;
   border: none;
+}
+
+.contact-form ::-webkit-input-placeholder {
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.contact-form :-ms-input-placeholder {
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.contact-form ::-ms-input-placeholder {
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.contact-form ::placeholder {
+  color: #FFFFFF;
+  opacity: 1;
 }
 
 .contact-footer {
@@ -626,6 +647,26 @@ article .article-image img {
 
 .blog-form .message :focus {
   border: 3px solid #171B0E;
+}
+
+.blog-form .blog-form ::-webkit-input-placeholder {
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.blog-form .blog-form :-ms-input-placeholder {
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.blog-form .blog-form ::-ms-input-placeholder {
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.blog-form .blog-form ::placeholder {
+  color: #FFFFFF;
+  opacity: 1;
 }
 
 .blog-form .submit {
@@ -1023,7 +1064,8 @@ h2 {
             flex-direction: column;
   }
   .about-item-container .about-item {
-    width: 80%;
+    width: 90%;
+    margin: 5% 4%;
   }
   .feature-container1 {
     -webkit-box-orient: vertical;

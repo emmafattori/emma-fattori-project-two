@@ -218,6 +218,11 @@ article{
 	}
 	}
 
+	.blog-form ::placeholder{
+		color: $secondary-highlight;
+		opacity: 1;
+	}
+
 	
 
 	.submit{

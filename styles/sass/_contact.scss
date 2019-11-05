@@ -43,6 +43,7 @@ $primary-font: 'Josefin Sans', sans-serif;
 	display:flex;
 	flex-wrap: wrap;
 	margin: 5%;
+	
 	#name{
 		width: 46%;
 		margin: 2%;
@@ -82,6 +83,12 @@ $primary-font: 'Josefin Sans', sans-serif;
 		border: none;
 	}
 }
+
+	.contact-form ::placeholder{
+   		color: $secondary-highlight;
+   		opacity: 1;
+}
+
 
 // Start of footer styling
 .contact-footer{

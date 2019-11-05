@@ -39,19 +39,17 @@ $primary-font: 'Josefin Sans', sans-serif;
 			content: "";
 			background: $primary-highlight;
 			position: absolute;
-			bottom:0;
+			bottom:-3px;
 			right:0;
 			left:0;
 			height: 10%;
 			opacity:0;
-
 		}
 
 		a:hover::after{
 			opacity: 1;
 			transition: opacity 0.6s ease-in;
-
-
+			margin-bottom:3px;
 		}
 	
 
