@@ -9,8 +9,19 @@ $primary-font: 'Josefin Sans', sans-serif;
 
 @media (max-width: 1125px){
 	.contact-footer .footer-content{
-		margin: 10% 5% 5% 5%;
+		margin: 5%;
 
+	}
+	.feature-text{
+		p{
+			font-size: 1.2rem;
+			line-height: 20px;
+		}
+
+		h3{
+			font-size: 1.4rem;
+			padding: 2% 0;
+		}
 	}
 }
 @media (max-width:970px){
@@ -19,6 +30,7 @@ $primary-font: 'Josefin Sans', sans-serif;
 		h1{
 		margin:0;
 		padding-top: 5%;
+		font-size: 55px;
 		}	
 	}
 	.about-item-container
@@ -41,6 +53,8 @@ $primary-font: 'Josefin Sans', sans-serif;
 	.comment-form .form-container{
 		top: -120px;
 	}
+
+	
 }
 
 @media (max-width: 840px){
@@ -83,7 +97,7 @@ $primary-font: 'Josefin Sans', sans-serif;
 		flex-direction: column;
 
 		.img-container{
-			width: 90%;
+			width: 60%;
 			margin: 4% auto;
 			
 		}

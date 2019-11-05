@@ -36,11 +36,11 @@ h1{
 	font-family: $primary-font;
 	color: $secondary-highlight;
 	font-weight: 600;
-	font-size: 3.45rem;
+	font-size: 4rem;
 	width: 30%;
 	text-transform: uppercase;
 	margin: 3% 0 2% 0;
-	padding-top: 8%;
+	padding-top: 4%;
 
 	span{
 		color: $secondary-color;
@@ -246,6 +246,11 @@ h1{
 		img{
 			width:100%;
 			display: block;
+			transition: all 0.5s;
+		}
+
+		img:hover{
+			transform: scaleX(1.5) scaleY(1.5);
 		}
 	}
 

@@ -188,6 +188,9 @@ article{
 		border-bottom: 3px solid $primary-highlight;
 		color: $secondary-highlight;
 	}
+	:focus{
+		border: 3px solid $primary-highlight;
+	}
 
 	.email{
 		width: 46%;
@@ -198,6 +201,10 @@ article{
 		color: $secondary-highlight;
 	}
 
+	:focus{
+		border: 3px solid $primary-highlight;
+	}
+
 	.message{
 		width:100%;
 		background: $primary-color;
@@ -205,7 +212,13 @@ article{
 		margin: 3%;
 		color: $secondary-highlight;
 		height: 250px;
+
+		:focus{
+		border: 3px solid $secondary-color;
 	}
+	}
+
+	
 
 	.submit{
 		width: 100%;
@@ -216,5 +229,11 @@ article{
 		text-transform: uppercase;
 		padding: 5px;
 		border: none;
+
+		:focus{
+		border: 3px solid $secondary-color;
 	}
+	}
+
+	
 }
