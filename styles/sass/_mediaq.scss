@@ -53,7 +53,6 @@ $primary-font: 'Josefin Sans', sans-serif;
 	.comment-form .form-container{
 		top: -120px;
 	}
-
 	
 }
 
@@ -195,7 +194,6 @@ $primary-font: 'Josefin Sans', sans-serif;
 		}
 	}
 
-
 	.blog-main-container{
 		flex-direction: column-reverse;
 
@@ -203,11 +201,7 @@ $primary-font: 'Josefin Sans', sans-serif;
 			width: 90%;
 			margin:0 auto;
 		}
-
-	}
-
-
-	
+	}	
 }
 // End of 740px MQ
 @media (max-width: 682px){
@@ -242,8 +236,6 @@ $primary-font: 'Josefin Sans', sans-serif;
 			}
 		}
 	}
-
-	
 }
-
+// End of MQ
 

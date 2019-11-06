@@ -86,7 +86,7 @@ h1{
 
 	}
 }
-// Feature section styling
+// Feature section styling begins
 .feature{
 	background: $secondary-color;
 	
@@ -140,12 +140,8 @@ h1{
 
 .new{
 	text-align: right;
-	padding: 4% 10% 2% 10%;
-
-	
+	padding: 4% 10% 2% 10%;	
 }
-
-
 .feature-image{
 	position: relative;
 	bottom:15px;
@@ -186,14 +182,14 @@ h1{
 	 }
 }
 
-// Start of banner section
+// Start of banner section styling
 
 .banner-container img{
 	width: 100%;
 	display: block;
 }
 
-// Start of spaces section
+// Start of spaces section styling
 .spaces{
 	background: $primary-color;
 	font-family: $primary-font;
@@ -202,7 +198,6 @@ h1{
 	.spaces-info{
 	display: flex;
 	}
-
 	
 }
 
@@ -231,7 +226,7 @@ h1{
 		}
 	
 	}
-	// Start of gallery section styling
+// Start of gallery section styling
 .gallery{
 	background: $secondary-color;
 }

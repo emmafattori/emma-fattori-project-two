@@ -35,17 +35,14 @@ main{
 aside{
 	width: 30%;
 
-
 	.aside-image{
 		background: $secondary-color;
 	}
-
 	.aside-image img{
 		width: 94%;
 		display: block;
 	}
 }
-
 
 .aside-text{
 	background: $secondary-color;
@@ -138,10 +135,8 @@ article{
 
 			img{
 			width:100%;
-		}
-		
-	}
-		
+		}		
+	}		
 }
 
 .comment-2{
@@ -179,7 +174,6 @@ article{
 	flex-wrap: wrap;
 	width: 100%;
 	
-
 	.name{
 		width: 46%;
 		margin: 2%;
@@ -223,8 +217,6 @@ article{
 		opacity: 1;
 	}
 
-	
-
 	.submit{
 		width: 100%;
 		background: $primary-highlight;
@@ -237,8 +229,7 @@ article{
 
 		:focus{
 		border: 3px solid $secondary-color;
+		}	
 	}
-	}
-
 	
 }
